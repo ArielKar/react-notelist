@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 800px;
+    margin: 60px auto;
+}
+
+#title {
+    writing-mode: vertical-rl;
+    letter-spacing: 2px;
+    color: cornflowerblue;
+}
+
+.display {
+    flex: 2;
+    padding: 10px;
+    font-family: Arial sans-serif;
+    background-color: darkgray;
+    text-shadow: 1px 1px aliceblue;
+    min-height: 70vh;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.note-list {
+    flex: 1;
+    list-style: none;
+}
+
+.note-item {
+    height: 60px;
+    border-top: 1px solid darkblue;
+    padding: 10px;
+    transition: all 0.5s ease-in-out;
+}
+
+.note-item:hover {
+    background-color: cornflowerblue;
+    cursor: pointer;
+}
+
+.new-note-wrapper {
+    flex: 1;
+    margin-left: 2em;
+}
+
